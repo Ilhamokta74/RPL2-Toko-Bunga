@@ -12,17 +12,16 @@ import org.hibernate.SessionFactory;
 
 /**
  *
- * @author ASUS
+ * @author P3d0
  */
-public class TokoBungaImpl implements TokoBungaDao{
+public class TokoBungaImpl implements TokoBungaDao {
     private final SessionFactory sessionFactory;
 
     public TokoBungaImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
     
-    
-    
+
     @Override
     public void save(TokoBunga tokobunga) {
         Session session = sessionFactory.openSession();
@@ -31,13 +30,13 @@ public class TokoBungaImpl implements TokoBungaDao{
             session.save(tokobunga);
             session.getTransaction().commit();
         }catch(Exception e){
-            System.err.println("Tidak dapat menyimpan data bunga");
+            System.err.print("Tidak dapat menyimpan data bunga");
             session.getTransaction().rollback();
         }
         finally{
             session.close();
         }
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
@@ -48,7 +47,7 @@ public class TokoBungaImpl implements TokoBungaDao{
             session.update(tokobunga);
             session.getTransaction().commit();
         }catch(Exception e){
-            System.err.println("Tidak dapat mengupdate data bunga");
+            System.err.print("Tidak dapat mengupdate data bunga");
             session.getTransaction().rollback();
         }
         finally{
@@ -65,13 +64,13 @@ public class TokoBungaImpl implements TokoBungaDao{
             session.delete(tokobunga);
             session.getTransaction().commit();
         }catch(Exception e){
-            System.err.println("Tidak dapat menghapus data bunga");
+            System.err.print("Tidak dapat menghapus data bunga");
             session.getTransaction().rollback();
         }
         finally{
             session.close();
         }
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
@@ -83,7 +82,7 @@ public class TokoBungaImpl implements TokoBungaDao{
             session.getTransaction().commit();
             return tokobunga;
         }catch(Exception e){
-            System.err.println("Tidak dapat menampilkan data bunga");
+            System.err.print("Tidak dapat menampilkan data bunga");
             session.getTransaction().rollback();
             return null;
         }
@@ -98,18 +97,17 @@ public class TokoBungaImpl implements TokoBungaDao{
         Session session = sessionFactory.openSession();
         try{
             session.beginTransaction();
-            List<TokoBunga> listbunga= session.createCriteria(TokoBunga.class).list();
+            List<TokoBunga> listbunga = session.createCriteria(TokoBunga.class).list();
             session.getTransaction().commit();
             return listbunga;
         }catch(Exception e){
-            System.err.println("Tidak ada list bunga");
+            System.err.print("Tidak ada list bunga");
             session.getTransaction().rollback();
             return null;
         }
         finally{
             session.close();
         }
-        
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

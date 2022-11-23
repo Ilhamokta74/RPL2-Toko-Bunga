@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author ASUS
+ * @author P3d0
  */
 public interface TokoBungaDao {
     public void save(TokoBunga tokobunga);
@@ -18,5 +18,4 @@ public interface TokoBungaDao {
     public void delete(TokoBunga tokobunga);
     public TokoBunga get(String kd_bunga);
     public List<TokoBunga> getList();
-    
 }
