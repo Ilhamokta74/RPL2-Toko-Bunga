@@ -16,10 +16,11 @@ import javax.swing.table.AbstractTableModel;
 public class TokoBungaTableModel extends AbstractTableModel{
     private List<TokoBunga> listTokoBunga = new ArrayList();
     private final String HEADER[] = {"Kode Bunga","Nama Bunga","Jenis Bunga","Harga Bunga"};
-    
-    public TokoBungaTableModel(List<TokoBunga> listTokoBunga){
+
+    public TokoBungaTableModel(List<TokoBunga> listTokoBunga) {
         this.listTokoBunga = listTokoBunga;
     }
+    
 
     @Override
     public int getRowCount() {
@@ -40,16 +41,18 @@ public class TokoBungaTableModel extends AbstractTableModel{
                 return tokoBunga.getKd_bunga();
             case 1:
                 return tokoBunga.getNama();
-            case 2: 
+            case 2:
                 return tokoBunga.getJenis();
             case 3:
                 return tokoBunga.getHarga();
             default:
                 return null;
+               
         }
     }
     
     public String getColumnName(int index){
         return HEADER[index];
     }
+    
 }
