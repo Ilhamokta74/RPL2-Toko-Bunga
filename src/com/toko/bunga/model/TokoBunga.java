@@ -60,5 +60,4 @@ public class TokoBunga implements Serializable{
         this.harga = harga;
     }
     
-    
 }

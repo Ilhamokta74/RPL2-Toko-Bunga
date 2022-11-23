@@ -3,13 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/test/TokoBunga/src/hibernate.cfg.xml</file>
             <file>file:/D:/test/TokoBunga/src/com/toko/bunga/dao/TokoBungaImpl.java</file>
-            <file>file:/D:/test/TokoBunga/src/com/toko/bunga/config/HibernateUtil.java</file>
+            <file>file:/D:/test/TokoBunga/src/com/toko/bunga/service/TokoBungaService.java</file>
+            <file>file:/D:/test/TokoBunga/src/jdbc.properties</file>
             <file>file:/D:/test/TokoBunga/src/com/toko/bunga/dao/TokoBungaDao.java</file>
             <file>file:/D:/test/TokoBunga/src/com/toko/bunga/controller/TokoBungaController.java</file>
             <file>file:/D:/test/TokoBunga/src/com/toko/bunga/model/TokoBunga.java</file>
             <file>file:/D:/test/TokoBunga/src/com/toko/bunga/view/TokoBungaView.java</file>
+            <file>file:/D:/test/TokoBunga/src/spring-config.xml</file>
+            <file>file:/D:/test/TokoBunga/src/com/toko/bunga/service/TokoBungaServiceImpl.java</file>
             <file>file:/D:/test/TokoBunga/src/com/toko/bunga/model/TokoBungaTableModel.java</file>
+            <file>file:/D:/test/TokoBunga/src/com/toko/bunga/app/TokoBungaApp.java</file>
         </group>
     </open-files>
 </project-private>

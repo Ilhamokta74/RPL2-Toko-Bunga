@@ -46,12 +46,11 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tokobunga?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>-->
     
+    
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
     
-    <mapping class = "com.toko.bunga.model.TokoBunga"/>
-    
-    
+    <mapping class="com.toko.bunga.model.TokoBunga"/>
   </session-factory>
 </hibernate-configuration>

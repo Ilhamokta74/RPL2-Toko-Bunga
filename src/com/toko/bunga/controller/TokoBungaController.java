@@ -5,9 +5,9 @@
  */
 package com.toko.bunga.controller;
 
+import static com.toko.bunga.app.TokoBungaApp.getTokoBungaService;
 //import com.toko.bunga.config.HibernateUtil;
 //import com.toko.bunga.dao.TokoBungaDao;
-import static com.toko.bunga.app.TokoBungaApp.getTokoBungaService;
 import com.toko.bunga.model.TokoBunga;
 import com.toko.bunga.model.TokoBungaTableModel;
 import com.toko.bunga.view.TokoBungaView;
@@ -22,7 +22,7 @@ public class TokoBungaController {
     private TokoBungaView tokoBungaView;
     private List<TokoBunga> listTokoBunga;
     private TokoBungaTableModel tokoBungaTableModel;
-    //private final TokoBungaDao tokoBungaDao = HibernateUtil.getTokoBungaDao();
+//    private final TokoBungaDao tokoBungaDao = HibernateUtil.getTokoBungaDao();
 
     public TokoBungaController(TokoBungaView tokoBungaView) {
         this.tokoBungaView = tokoBungaView;

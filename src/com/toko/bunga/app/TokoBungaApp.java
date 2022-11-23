@@ -23,7 +23,6 @@ public class TokoBungaApp {
     }
     
     public static TokoBungaService getTokoBungaService(){
-        return (TokoBungaService)appContext.getBean("TokoBungaService");
+        return (TokoBungaService) appContext.getBean("TokoBungaService");
     }
-    
 }
